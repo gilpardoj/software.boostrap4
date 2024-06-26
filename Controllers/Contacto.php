@@ -15,7 +15,7 @@
 			}else{
 				$data['page_tag'] = NOMBRE_EMPESA;
 				$data['page_title'] = NOMBRE_EMPESA." - ".$pageContent['titulo'];
-				$data['page_name'] = $pageContent['titulo'];
+				$data['page_name'] = 'contacto';
 				$data['page'] = $pageContent;
 				$this->views->getView($this,"contacto",$data); 
 			}

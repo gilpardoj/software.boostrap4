@@ -7,12 +7,8 @@ headerTienda($data);
  <script>
  	document.querySelector('header').classList.add('header-v4');
  </script>
-<!-- Title page -->
-<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url(<?= $banner ?>);">
-	<h2 class="text-muted ltext-105 cl0 txt-center">
-		<?= $data['page']['titulo'] ?>
-	</h2>
-</section>
+
+
 <!-- Content page -->
 <?php
 	if(viewPage($idpagina)){

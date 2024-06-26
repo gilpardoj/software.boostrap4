@@ -158,29 +158,25 @@
 
 					<!-- Menu desktop -->
 					<div class="menu-desktop">
-						<ul class="main-menu">
-							<li class="active-menu">
-								<a href="<?= base_url(); ?>">Inicio</a>
-							</li>
+            <ul class="main-menu">
+                <li class="main-menu-item <?= ($data['page_name'] == '' || $data['page_name'] == 'inicio') ? 'active-menu' : ''; ?>" data-page-name="inicio">
+                    <a href="<?= base_url(); ?>">Inicio</a>
+                </li>
+                <li class="main-menu-item <?= ($data['page_name'] == 'tienda') ? 'active-menu' : ''; ?>" data-page-name="tienda">
+                    <a href="<?= base_url(); ?>/tienda">Tienda</a>
+                </li>
+                <li class="main-menu-item <?= ($data['page_name'] == 'carrito') ? 'active-menu' : ''; ?>" data-page-name="carrito">
+                    <a href="<?= base_url(); ?>/carrito">Carrito</a>
+                </li>
+                <li class="main-menu-item <?= ($data['page_name'] == 'nosotros') ? 'active-menu' : ''; ?>" data-page-name="nosotros">
+                    <a href="<?= base_url(); ?>/nosotros">Nosotros</a>
+                </li>
+                <li class="main-menu-item <?= ($data['page_name'] == 'contacto') ? 'active-menu' : ''; ?>" data-page-name="contacto">
+                    <a href="<?= base_url(); ?>/contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>  
 
-							<li>
-								<a href="<?= base_url(); ?>/tienda">Tienda</a>
-							</li>
-
-							<li>
-								<a href="<?= base_url(); ?>/carrito">Carrito</a>
-							</li>
-							
-							<li>
-								<a href="<?= base_url(); ?>/nosotros">Nosotros</a>
-							</li>
-
-
-							<li>
-								<a href="<?= base_url(); ?>/contacto">Contacto</a>
-							</li>
-						</ul>
-					</div>	
 
 					<!-- Icon header -->
 					<div class="wrap-icon-header flex-w flex-r-m">

@@ -14,7 +14,7 @@
 			$pageContent = getPageRout('inicio');
 			$data['page_tag'] = NOMBRE_EMPESA;
 			$data['page_title'] = NOMBRE_EMPESA;
-			$data['page_name'] = "tienda_virtual";
+			$data['page_name'] = "inicio";
 			$data['page'] = $pageContent;
 			$data['slider'] = $this->getCategoriasT(CAT_SLIDER);
 			$data['banner'] = $this->getCategoriasT(CAT_BANNER);
